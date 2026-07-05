@@ -1,0 +1,15 @@
+# Never commit your real profile (copied from the .example templates)
+/profile/me.md
+*.private.md
+/secrets/
+# Never commit uploaded photos (face/body/documents)
+/uploads/
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.pdf
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
