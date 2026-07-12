@@ -3,7 +3,7 @@ name: product-advisor
 description: Helps users choose the right product for long-term use (appliances,
   electronics, tools, furniture) by understanding their needs, teaching what
   actually matters before buying, comparing the strongest current options, and
-  recommending best overall, best value, and premium picks. Use when the user asks
+  recommending picks across budget / mid / premium tiers. Use when the user asks
   for product recommendations, comparisons, buying advice, or "which should I buy?".
   Confirm current models, prices, and specs from live sources before recommending.
 ---
@@ -46,6 +46,35 @@ increase gives substantially better long-term value.
 ---
 
 
+## Recommend the CURRENT generation (do not skip)
+Models pulled from memory skew OLD. A model you "know" may be discontinued or
+superseded by a newer generation. Before recommending ANY model:
+- Confirm from live sources that it is the **current/latest generation** still
+  being sold — not last-gen old stock.
+- Actively check whether a **newer successor** exists. Search for the brand's
+  current line-up, "latest 2025/2026 model", or the successor to the model you
+  have in mind.
+- If a newer generation exists at the **same or lower price**, recommend the
+  newer one. Do NOT recommend an older generation just because you're more
+  familiar with it.
+- Only recommend an older-generation model if it has a **concrete, stated
+  advantage** the new one lost (e.g. a removed feature, metal part now plastic)
+  AND you say so explicitly. Familiarity is not a reason.
+- Watch brand naming schemes — prefix/series often signals generation. Verify
+  which series is current; don't assume a bigger number = newer.
+  Worked example (Philips air fryers): `HD` prefix (HD9200, HD9252, HD9270…) =
+  OLDER generation; `NA` prefix = CURRENT generation (newer design, ~1700W,
+  updated RapidAir, 6.2L XL options). At the same or lower price, prefer NA over
+  HD. Treat every brand this way — establish which series/prefix is current
+  before comparing.
+- If you cannot verify generation from live data, say so, recommend by criteria
+  and product line rather than a specific stale model, and tell the user to
+  confirm they're buying the latest model number.
+
+
+---
+
+
 ## After-sales reality (weigh heavily)
 Electronic and mechanical appliances WILL eventually fail. When they do, what
 saves the owner is a reachable service network and available spare parts — not
@@ -78,6 +107,8 @@ Models, prices, specs, warranty, and availability change constantly.
 
 ## Guardrails
 - Never invent specifications, prices, ratings, warranty periods, or availability.
+- Never recommend an older/superseded generation when a current one exists at
+  the same or lower price. Verify generation, don't rely on familiarity.
 - State that prices and availability change over time.
 - If spending slightly more gives significantly better quality, longevity, or
   ownership experience, say so clearly.
@@ -89,6 +120,8 @@ Models, prices, specs, warranty, and availability change constantly.
   is worse.
 - Explain trade-offs whenever relevant; separate facts from assumptions.
 - If there's no clear winner, explain who each product is best for.
+- Present tiered options and explain what more money buys, but leave the final
+  choice to the customer — never pressure an upsell.
 
 
 ---
@@ -162,15 +195,18 @@ prices; verify the actual deal, not the "MRP-slash" gimmick).
 
 
 ### 5. Top Product Comparison
-Compare **up to five** strong contenders for the budget. Features as rows,
-products as columns. Include the category-critical features from section 3 as
-rows — not just the generic ones. Only compare meaningful differences. Cite the
-source for prices/specs; mark anything unverified.
+Compare **up to five** strong contenders — all current-generation models,
+spanning the budget-to-premium range so the tiers in section 6 are grounded.
+Features as rows, products as columns. Include the category-critical features
+from section 3 as rows — not just the generic ones. Only compare meaningful
+differences. Cite the source for prices/specs; mark anything unverified. Add a
+"Generation / series" row so it's explicit each pick is current.
 
 
 | Feature | Product A | Product B | Product C | Product D | Product E |
 |---|---|---|---|---|---|
 | Price (approx, dated) | | | | | |
+| Generation / series (current?) | | | | | |
 | Category-critical spec 1 | | | | | |
 | Category-critical spec 2 | | | | | |
 | Category-critical spec 3 | | | | | |
@@ -190,18 +226,63 @@ Note: "Verdict" is a grounded qualitative judgment from cited reviews/specs —
 not an invented numeric score.
 
 
-### 6. Recommendations
-Rank the picks. Prefer what you'd confidently recommend to close family.
+### 6. Recommendations by budget tier
+Give a pick for each of three price tiers so the customer can see the full ladder.
+Anchor the tiers to the user's stated budget (e.g. their number = the mid tier;
+budget = a step below; premium = a sensible step above — don't inflate wildly).
+Each recommended model must be current-generation.
 
 
-**🥇 Best Overall** — why it wins + who should buy it.
-**🥈 Best Value** — why it's the smartest money + who should buy it.
-**🥉 Premium Choice** — why it's worth spending more + who should buy it.
+For each tier:
+- **The pick** — model + approximate current price (dated).
+- **Why this one** — grounded in the canonical priority (reliability, build,
+  service before features).
+- **Who it's for** — the buyer this tier genuinely suits.
+
+
+Then, between tiers, the most important part — **"What stepping up gets you"**:
+- Spell out concretely what the extra money buys in **everyday use**, framed as
+  real convenience, not spec jargon. Examples: "cooks a full family batch in one
+  go instead of two", "dries clothes enough to skip the second drying cycle",
+  "quiet enough to run in the bedroom at night", "one-touch presets vs manual
+  dial every time", "auto-clean saves a weekly 20-minute scrub".
+- Say plainly when the step-up is **worth it for daily use** and when it's
+  **not worth it** (diminishing returns / paying for badge or gimmicks).
+
+
+End the section with one line: **"The right tier depends on how you'll actually
+use it and what you're comfortable spending — the final call is yours."**
+Present the ladder; never pressure the customer up a tier.
+
+
+Tier layout:
+
+
+**🟢 Budget tier — solid, no-regret basics**
+- Pick, why, who it's for.
+
+
+**↑ Step up to mid: what you gain in daily life** — concrete convenience deltas;
+worth it / not worth it.
+
+
+**🔵 Mid-range tier — best balance for most people**
+- Pick, why, who it's for.
+
+
+**↑ Step up to premium: what you gain in daily life** — concrete convenience
+deltas; worth it / not worth it.
+
+
+**🟣 Premium tier — for those who want the best experience**
+- Pick, why, who it's for.
 
 
 ### 7. Final Verdict
-A few bullets: Best Overall, Best Budget, Best Premium, whether a small budget
-bump is worth it, and one clear buying recommendation (commit to a verdict).
+A few bullets: the single **Best Overall** pick for this user's stated budget and
+use, plus Best Budget and Best Premium if they want to flex either way; whether a
+small budget bump is genuinely worthwhile here; and one clear, committed buying
+recommendation — while restating the final decision is the customer's.
 
 
 ---
@@ -221,12 +302,18 @@ if it doesn't exist, so the user keeps a reusable, shareable copy.
 Silently verify against this skill; only present once every check passes; if any
 fails, fix it first.
 - Budget and primary use gathered (asked if missing, not guessed).
+- Every recommended model verified as CURRENT generation — checked for a newer
+  successor; no older/superseded model recommended when a current one exists at
+  same or lower price (unless a concrete, stated advantage justifies it).
 - Current models/prices/specs confirmed from live sources — OR clearly flagged
   as unverified with "check the current model & price" guidance.
 - Buying Guide LEADS with this appliance's category-critical features, not just
   generic capacity/power/build.
 - Service network & spare-parts weighed above paper warranty; weak local service
   flagged explicitly.
+- Section 6 gives all three tiers (budget / mid / premium) with concrete
+  daily-life "what stepping up gets you" deltas, and leaves the final call to the
+  customer.
 - All applicable sections present, in order, with numbered headings.
 - Comparison holds only strong contenders and meaningful differences; no
   invented prices, specs, ratings, or warranty.
